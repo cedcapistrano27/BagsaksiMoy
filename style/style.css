@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+	max-width: 1300px;
+	margin: auto;
+	height: auto;
+}
+
+header{
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	
+}
+
+nav{
+
+	text-align: center;
+	flex: 2;
+}
+
+.link ul{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	margin: 0;
+
+}
+
+
+.link li a{
+	text-decoration: none;
+	color: #524F4F;
+	display: block;
+	
+
+}
+
+.link:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.link > ul > li{
+	position: relative;
+}
+.link ul li:hover .nav-link{
+	border-bottom: 3px solid #F1C86B;
+}
+.link ul ul{
+	position: absolute;
+	padding: 0;
+	width: 120px;
+	display: none;
+	top: 100%;
+	left: 0;
+}
+
+.link ul li:hover > ul{
+	display: block;
+}
+.link ul ul li{
+	padding: 15px;
+	background-color: white;
+	transition: 2s;
+	
+
+}
+.link ul ul li:hover .account-link{
+	border-bottom: 2px solid #9DEF7D;
+}
+
+
+.logo{
+	flex: 1;
+	text-align: center;
+}
+
+
+footer{
+
+	max-width: 100%;
+	
+	align-items: center;
+	background: #131313;
+
+}
+
+.row-1{
+	display: flex;
+}
+.row-1 .col-1{
+	flex: 1;
+	margin-top: 20px;
+	
+	
+}
+.row-1 .col-1 ul{
+	list-style: none;
+	margin: 10px 0px 10px 0px;
+}
+.row-1 .col-1 ul li{
+	margin-top: 10px;
+	text-align: center;
+}
+.row-1 .col-1 ul li a,p, li{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#nav-icon{
+	margin-right: 10px;
+
+}
+
+main{
+	max-width: 100%;
+	
+	
+}
+
+main .form-area{
+	
+	width: 50%;
+	margin: 30px 0px 30px 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ main .form-area .form-container{
+ 	
+ 	width: 70%;
+ 	margin: 10px 0px 10px 0px;
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+  main .form-area .form-container .form-input{
+  	
+ 	width: 90%;
+ 	margin: 10px 0px 10px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+  }
+  main .form-area .form-container .form-input span{
+  	flex: 1;
+  	font-size: 15px;
+  }
+  main .form-area .form-container .form-input input{
+  	height: 30px;
+  	flex: 1;
+  	font-size: 17px;
+}
+
+main .introduction{
+	width: auto;
+	padding: 20px;
+	border: 2px solid black;
+}
+
